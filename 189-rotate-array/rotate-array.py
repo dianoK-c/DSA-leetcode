@@ -4,9 +4,9 @@ class Solution(object):
        if n == 0 or k==0:
         return nums
        k = k % n 
-       self.reverse(nums, 0, n - 1)   # reverse whole array
-       self.reverse(nums, 0, k - 1)   # reverse first k elements
-       self.reverse(nums, k, n - 1)   # reverse remaining elements
+       self.reverse(nums, 0, n - 1)   
+       self.reverse(nums, 0, k - 1)   
+       self.reverse(nums, k, n - 1)   
 
     def reverse(self, nums, left, right):
         while left < right:
